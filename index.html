@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sai Akash Katragadda — Portfolio</title>
+  <meta name="description" content="MS in Analytics @ Northeastern. Data Analyst skilled in Python, SQL, Tableau, Power BI, and Machine Learning." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-1hFQ8R0F1WkKQk9KxW7p8jX6wHk0m5j2j0Tj6Vx4n5z9c0JQYq3S1V6yq8W5z8uHcP7nJz8+Y0Vq2q0E9C8QvA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    :root{
+      --bg:#0b172a; /* deep navy */
+      --bg-2:#0f213f; /* section background */
+      --card:#122a4a;
+      --text:#e5ecf5;
+      --muted:#9fb2ca;
+      --accent:#4f46e5; /* indigo */
+      --accent-2:#22d3ee; /* cyan */
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:var(--text);background:linear-gradient(180deg,var(--bg),#0b1630 40%,#0b1630);} 
+    a{color:var(--accent-2);text-decoration:none}
+    a:hover{opacity:.9}
+    .container{width:min(1100px,92%);margin-inline:auto}
+    header{position:sticky;top:0;backdrop-filter:blur(10px);background:rgba(11,22,48,.6);border-bottom:1px solid rgba(255,255,255,.06);z-index:50}
+    nav{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
+    .brand{font-weight:800;letter-spacing:.4px}
+    .navlinks a{margin:0 10px;color:var(--muted)}
+    .navlinks a.active,.navlinks a:hover{color:var(--text)}
+    .btn{display:inline-flex;align-items:center;gap:10px;padding:12px 18px;border:1px solid rgba(255,255,255,.15);border-radius:12px;color:var(--text);background:transparent}
+    .btn.primary{background:linear-gradient(90deg,var(--accent),var(--accent-2));border:none;color:white}
+    .btn:hover{transform:translateY(-1px)}
+    .hero{padding:90px 0 60px;background:radial-gradient(1200px 500px at 80% -20%,rgba(79,70,229,.25),transparent),radial-gradient(800px 300px at 10% -10%,rgba(34,211,238,.18),transparent)}
+    .hero h1{font-size:clamp(36px,6vw,64px);margin:10px 0}
+    .hero p{color:var(--muted);font-size:1.1rem;max-width:780px}
+    .cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:18px}
+    section{padding:60px 0;border-top:1px solid rgba(255,255,255,.06)}
+    h2{font-size:28px;margin:0 0 16px}
+    .kpis,.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
+    .card{background:linear-gradient(180deg,rgba(255,255,255,.04),rgba(255,255,255,.02));border:1px solid rgba(255,255,255,.06);border-radius:16px;padding:18px}
+    .muted{color:var(--muted)}
+    .timeline{display:grid;gap:14px}
+    .timeline .item{display:grid;gap:6px;padding:18px;border-radius:14px;background:linear-gradient(180deg,rgba(255,255,255,.04),rgba(255,255,255,.02));border:1px solid rgba(255,255,255,.06)}
+    .item h3{margin:0;font-size:18px}
+    .item .meta{color:var(--muted);font-size:.95rem}
+    .projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
+    .project{display:flex;flex-direction:column;gap:10px}
+    .tag{display:inline-block;border:1px solid rgba(255,255,255,.12);padding:4px 10px;border-radius:999px;font-size:.85rem;color:var(--muted)}
+    footer{padding:40px 0;color:var(--muted)}
+    .pill{display:inline-flex;gap:8px;align-items:center;padding:8px 12px;border:1px solid rgba(255,255,255,.12);border-radius:999px}
+    /* small scroll spy */
+    .section{scroll-margin-top:80px}
+  </style>
+</head>
+<body>
+  <!-- NAV -->
+  <header>
+    <div class="container">
+      <nav>
+        <div class="brand">Sai Akash Katragadda</div>
+        <div class="navlinks">
+          <a href="#about">About</a>
+          <a href="#experience">Experience</a>
+          <a href="#education">Education</a>
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero section" id="home">
+    <div class="container">
+      <p class="pill"><i class="fa-solid fa-location-dot"></i> Boston, MA · MS in Analytics @ Northeastern</p>
+      <h1>Data Analyst & ML Enthusiast</h1>
+      <p>Turning raw data into decisions. I build clean pipelines, analytical dashboards, and predictive models with Python, SQL, and BI tools to drive product and business outcomes.</p>
+      <div class="cta">
+        <a class="btn primary" href="./AkashKatragadda_Resume.pdf" target="_blank" rel="noopener">
+          <i class="fa-solid fa-file-arrow-down"></i> Resume
+        </a>
+        <a class="btn" href="https://www.linkedin.com/in/sai-akash-katragadda" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+        <a class="btn" href="https://github.com/sai-boop" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="container">
+      <h2>About</h2>
+      <p class="muted">Graduate analyst with hands-on experience in predictive modeling, data visualization, and automation. Comfortable across the stack—from data wrangling to ML to executive-ready dashboards. I enjoy translating ambiguous questions into measurable metrics and clear visuals.</p>
+      <div class="kpis">
+        <div class="card"><strong>+25%</strong><br/><span class="muted">Lift in model accuracy (Traxidy)</span></div>
+        <div class="card"><strong>10+</strong><br/><span class="muted">Interactive dashboards delivered</span></div>
+        <div class="card"><strong>95%</strong><br/><span class="muted">Reduction in data entry errors via automation</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="section" id="experience">
+    <div class="container">
+      <h2>Experience</h2>
+      <div class="timeline">
+        <div class="item">
+          <h3>Data Science Intern · AP State Skill Development Corporation</h3>
+          <div class="meta">Mar 2022 – Aug 2022 · Andhra Pradesh, India</div>
+          <ul>
+            <li>Implemented predictive analytics in Python/R; improved international market forecast accuracy by <strong>30%</strong>.</li>
+            <li>Enhanced model accuracy by <strong>25%</strong> using TensorFlow & scikit-learn.</li>
+            <li>Built <strong>10+</strong> interactive dashboards (Tableau/Power BI) to drive data-informed decisions.</li>
+          </ul>
+        </div>
+        <div class="item">
+          <h3>Data Management Intern · Sevita Nursing Home</h3>
+          <div class="meta">Apr 2021 – Jul 2021 · Andhra Pradesh, India</div>
+          <ul>
+            <li>Automated Excel workflows for patient data; reduced entry errors by <strong>95%</strong> with HIPAA-compliant processes.</li>
+            <li>Supported clinical/operational decision-making with predictive analytics and clear presentations.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section class="section" id="education">
+    <div class="container">
+      <h2>Education</h2>
+      <div class="timeline">
+        <div class="item">
+          <h3>Northeastern University — MS in Analytics</h3>
+          <div class="meta">Boston, MA · Apr 2025 (expected)</div>
+          <div class="muted">Data Mining, BI, Predictive & Enterprise Analytics, Statistical Modeling, Data Viz, Risk Analysis</div>
+        </div>
+        <div class="item">
+          <h3>Vellore Institute of Technology — B.Tech, CSE</h3>
+          <div class="meta">AP, India · Jun 2023</div>
+          <div class="muted">DBMS, Data Mining Applications, Network Security, Probability & Statistics, DS & Algorithms</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section" id="projects">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="projects">
+        <article class="project card">
+          <div class="tag">Python · Sklearn · Tableau</div>
+          <h3>AI‑Driven Risk & Performance Analytics (Traxidy)</h3>
+          <p class="muted">Optimized Random Forest & Gradient Boosting with curated features to reduce unforeseen project delays; achieved <strong>+25% accuracy</strong>. Built executive dashboards for real-time decisions.</p>
+          <p><a href="#" onclick="alert('Add your GitHub link for Traxidy project');return false;">GitHub Repo</a></p>
+        </article>
+        <article class="project card">
+          <div class="tag">TensorFlow · NLP · Tableau</div>
+          <h3>Advanced Market Trend Analysis via Social Sentiment</h3>
+          <p class="muted">Scraped UGC, trained sentiment models (TF/Sklearn). Improved trend prediction by <strong>20%</strong>; insights drove a <strong>15%</strong> lift in campaign effectiveness.</p>
+          <p><a href="#" onclick="alert('Add your GitHub link for Sentiment project');return false;">GitHub Repo</a></p>
+        </article>
+        <article class="project card">
+          <div class="tag">LogReg · Gradient Boosting</div>
+          <h3>Predictive Analysis of Heart Disease</h3>
+          <p class="muted">Applied Logistic Regression & Gradient Boosting; increased predictive accuracy by <strong>20%</strong>. Improved early‑intervention strategies by <strong>25%</strong>.</p>
+          <p><a href="#" onclick="alert('Add your GitHub link for Heart Disease project');return false;">GitHub Repo</a></p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section" id="skills">
+    <div class="container">
+      <h2>Skills</h2>
+      <div class="skills">
+        <div class="card"><strong>Languages/Libs</strong><br/><span class="muted">Python, R, SQL, Pandas, NumPy, scikit‑learn, TensorFlow, PyTorch</span></div>
+        <div class="card"><strong>BI & Viz</strong><br/><span class="muted">Tableau, Power BI, Data Visualization, KPI Development</span></div>
+        <div class="card"><strong>Data & Cloud</strong><br/><span class="muted">ETL, ADF, Databricks, Azure Functions, Synapse</span></div>
+        <div
